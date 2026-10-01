@@ -8,6 +8,13 @@
 <meta name="theme-color" content="#0b0b0c">
 <link rel="icon" href="uploads/cropped-cropped-H-Icon.png-Photoroom.png">
 <link rel="preload" as="image" href="assets/stills/s0.webp">
+<script>
+// ?gsap=1 loads the GSAP motion version (gsap-motion.js); no parameter keeps the default motion
+(function(){ try { if (new URLSearchParams(location.search).get('gsap') !== '1') return;
+  var base = 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/', files = [base + 'gsap.min.js', base + 'SplitText.min.js', base + 'ScrambleTextPlugin.min.js', 'gsap-motion.js'];
+  window.__gsapReady = new Promise(function (res) { files.forEach(function (f, i) { var s = document.createElement('script'); s.src = f; s.async = false; if (i === files.length - 1) { s.onload = res; s.onerror = res; } document.head.appendChild(s); }); });
+} catch (e) {} })();
+</script>
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=general-sans@400,500,600&display=swap">
 <script src="./support.js"></script>
@@ -71,7 +78,7 @@ html,body{margin:0;background:var(--bg,#0b0b0c);overflow-x:clip}
 [data-eyebrow]{text-shadow:0 2px 14px rgba(0,0,0,.55),0 1px 2px rgba(0,0,0,.45)}
 
 </style>
-<link rel="stylesheet" href="mobile.css" media="(max-width:768px)">
+<link rel="stylesheet" href="mobile.css?v=3" media="(max-width:768px)">
 <style>
 /* v2: 11px floor for functional labels that mobile.css shrinks */
 @media (max-width:768px){
@@ -106,7 +113,7 @@ html,body{margin:0;background:var(--bg,#0b0b0c);overflow-x:clip}
 
 <div data-hero-title="true" style="position:fixed;z-index:3;left:0;right:0;bottom:clamp(196px,26vh,300px);padding:0 clamp(16px,3vw,40px);text-align:center;pointer-events:none">
 <div data-eyebrow="true" style="margin: 0 0 clamp(20px,2.6vh,32px); font-family: var(--font-mono,monospace); font-weight: 400; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--tx-faint,#6b6b73)">Investor · Operator · Mentor</div>
-<h1 style="margin: 0; display: flex; justify-content: center; align-items: baseline; flex-wrap: nowrap; white-space: nowrap; gap: .28em; font-family: var(--font-grotesk,sans-serif); font-weight: 500; text-transform:uppercase; line-height: .95; letter-spacing:-.01em; font-size: clamp(2.6rem,7.6vw,6.6rem)"><span style="color:var(--glow,#f6f5f2);text-shadow:0 0 48px var(--glow-soft,rgba(246,245,242,.14))">Saad</span><span style="color:var(--tx-muted,#a1a1aa)">Hashmani</span></h1>
+<h1 style="margin: 0; display: flex; justify-content: center; align-items: baseline; flex-wrap: nowrap; white-space: nowrap; gap: .28em; font-family: var(--font-grotesk,sans-serif); font-weight: 500; text-transform:uppercase; line-height: .95; letter-spacing:-.01em; font-size: clamp(2.6rem,7.6vw,6.6rem)"><span style="color:var(--glow,#f6f5f2);text-shadow:0 0 48px var(--glow-soft,rgba(246,245,242,.14))">SAAD</span><span style="color:var(--tx-muted,#a1a1aa)">HASHMANI</span></h1>
 </div>
 
 <button data-arrow="true" type="button" aria-label="Scroll to unlock" style="position:fixed;z-index:5;bottom:clamp(10px,2vh,24px);width:120px;height:120px;display:flex;align-items:center;justify-content:center;padding:0;border:none;background:none;cursor:pointer">
@@ -123,7 +130,7 @@ html,body{margin:0;background:var(--bg,#0b0b0c);overflow-x:clip}
 </span>
 </button>
 
-<div data-preloader="true" style="position:fixed;inset:0;z-index:70;background:var(--ink-900,#030405);opacity:1;transition:opacity .8s cubic-bezier(.16,1,.3,1);overflow:hidden"><img src="assets/stills/s0.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;display:block"><div data-pre-veil="true" style="position:absolute;inset:0;background:var(--ink-900,#030405);opacity:1;will-change:opacity"></div><div style="position:absolute;inset:0;background:radial-gradient(130% 120% at 50% 42%,rgba(11,11,12,.28) 0%,rgba(11,11,12,.46) 60%,rgba(11,11,12,.66) 100%)"></div><div style="position:absolute;inset:auto 0 0 0;height:56vh;background:linear-gradient(to top,rgba(11,11,12,.94) 0%,rgba(11,11,12,.7) 30%,rgba(11,11,12,0) 100%)"></div><div style="position:absolute;left:0;right:0;bottom:clamp(196px,26vh,300px);padding:0 clamp(16px,3vw,40px);text-align:center"><div aria-hidden="true" style="visibility:hidden;margin:0 0 clamp(20px,2.6vh,32px);font-family:var(--font-mono,monospace);font-size:12px;letter-spacing:.16em">loading</div><h1 style="margin:0;display:flex;justify-content:center;align-items:baseline;flex-wrap:nowrap;white-space:nowrap;gap:.28em;font-family:var(--font-grotesk,sans-serif);font-weight:500;text-transform:none;line-height:.95;letter-spacing:-.01em;font-size:clamp(2.6rem,7.6vw,6.6rem)"><span data-pre-s1="true" style="color:var(--glow,#f6f5f2);text-shadow:0 0 48px var(--glow-soft,rgba(246,245,242,.14))">Saad</span><span data-pre-s2="true" style="color:var(--tx-muted,#a1a1aa)">Hashmani</span></h1></div><div style="position:absolute;left:50%;transform:translateX(-50%);bottom:clamp(10px,2vh,24px);width:120px;height:120px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 120 120" width="120" height="120" style="position:absolute;inset:0;display:block;animation:vault-spin 12s linear infinite;overflow:visible"><defs><path id="pre-circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" fill="none"></path></defs><text style="font-family:var(--font-mono,monospace);font-weight:400;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;fill:var(--tx-faint,#6b6b73)"><textPath data-pre-ringtext="true" href="#pre-circ" startOffset="0" textLength="276" lengthAdjust="spacing">LOADING · LOADING · LOADING · </textPath></text></svg><div data-pre-wave="true" style="position:relative;display:flex;align-items:flex-end;gap:4px;height:22px;transition:opacity .4s var(--ease-brand,cubic-bezier(.16,1,.3,1))"><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out infinite"></span><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out .18s infinite"></span><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out .36s infinite"></span></div><svg data-pre-arrow="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--glow,#f6f5f2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;opacity:0;transition:opacity .5s var(--ease-brand,cubic-bezier(.16,1,.3,1))"><path d="M12 4 L12 20 M6 14 L12 20 L18 14"></path></svg></div></div>
+<div data-preloader="true" style="position:fixed;inset:0;z-index:70;background:var(--ink-900,#030405);opacity:1;transition:opacity .8s cubic-bezier(.16,1,.3,1);overflow:hidden"><img src="assets/stills/s0.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;display:block"><div data-pre-veil="true" style="position:absolute;inset:0;background:var(--ink-900,#030405);opacity:1;will-change:opacity"></div><div style="position:absolute;inset:0;background:radial-gradient(130% 120% at 50% 42%,rgba(11,11,12,.28) 0%,rgba(11,11,12,.46) 60%,rgba(11,11,12,.66) 100%)"></div><div style="position:absolute;inset:auto 0 0 0;height:56vh;background:linear-gradient(to top,rgba(11,11,12,.94) 0%,rgba(11,11,12,.7) 30%,rgba(11,11,12,0) 100%)"></div><div style="position:absolute;left:0;right:0;bottom:clamp(196px,26vh,300px);padding:0 clamp(16px,3vw,40px);text-align:center"><div aria-hidden="true" style="visibility:hidden;margin:0 0 clamp(20px,2.6vh,32px);font-family:var(--font-mono,monospace);font-size:12px;letter-spacing:.16em">loading</div><h1 style="margin:0;display:flex;justify-content:center;align-items:baseline;flex-wrap:nowrap;white-space:nowrap;gap:.28em;font-family:var(--font-grotesk,sans-serif);font-weight:500;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;font-size:clamp(2.6rem,7.6vw,6.6rem)"><span data-pre-s1="true" style="color:var(--glow,#f6f5f2);text-shadow:0 0 48px var(--glow-soft,rgba(246,245,242,.14))">SAAD</span><span data-pre-s2="true" style="color:var(--tx-muted,#a1a1aa)">HASHMANI</span></h1></div><div style="position:absolute;left:50%;transform:translateX(-50%);bottom:clamp(10px,2vh,24px);width:120px;height:120px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 120 120" width="120" height="120" style="position:absolute;inset:0;display:block;animation:vault-spin 12s linear infinite;overflow:visible"><defs><path id="pre-circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" fill="none"></path></defs><text style="font-family:var(--font-mono,monospace);font-weight:400;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;fill:var(--tx-faint,#6b6b73)"><textPath data-pre-ringtext="true" href="#pre-circ" startOffset="0" textLength="276" lengthAdjust="spacing">LOADING · LOADING · LOADING · </textPath></text></svg><div data-pre-wave="true" style="position:relative;display:flex;align-items:flex-end;gap:4px;height:22px;transition:opacity .4s var(--ease-brand,cubic-bezier(.16,1,.3,1))"><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out infinite"></span><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out .18s infinite"></span><span style="width:3px;height:22px;transform-origin:bottom;background:var(--glow,#f6f5f2);border-radius:2px;animation:pre-wave 1s ease-in-out .36s infinite"></span></div><svg data-pre-arrow="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--glow,#f6f5f2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;opacity:0;transition:opacity .5s var(--ease-brand,cubic-bezier(.16,1,.3,1))"><path d="M12 4 L12 20 M6 14 L12 20 L18 14"></path></svg></div></div>
 
 <div data-sec2="true" style="position:fixed;inset:0;z-index:3;pointer-events:none;opacity:0;will-change:opacity,transform">
 
@@ -655,11 +662,13 @@ class Component extends DCLogic {
     this.onResize = () => { this.layout(); this.pbs && this.pbs.forEach(p => this.layoutPb(p)); this.handle(this.readY()); if (this.headEl) { this.headEl._hRect = this.headEl.getBoundingClientRect(); if (this.headEl._clone) this.headEl._clone.style.width = this.headEl._hRect.width + 'px'; } };
     window.addEventListener('resize', this.onResize, { passive: true });
 
-    const frame = (now) => { const dt = this._lastFrameT != null ? Math.min(0.05, (now - this._lastFrameT) / 1000) : 0; this._lastFrameT = now; this.tickBg(now); this.tickPlaybook(now); this.tickPods(); this.tickTestis(); this.tickCollage(); this.tickArrowMagnet(); this.tickMenu(); if (this.cur) this.tickCursor(); this.raf = requestAnimationFrame(frame); };    this.raf = requestAnimationFrame(frame);
+    const frame = (now) => { const dt = this._lastFrameT != null ? Math.min(0.05, (now - this._lastFrameT) / 1000) : 0; this._lastFrameT = now; this.tickBg(now); this.tickPlaybook(now); this.tickPods(); this.tickTestis(); this.tickCollage(); this.tickArrowMagnet(); this.tickMenu(); if (this.motion) this.motion.tick(); if (this.cur) this.tickCursor(); this.raf = requestAnimationFrame(frame); };    this.raf = requestAnimationFrame(frame);
 
     this.handle(0);
     this.runPreloader();
     this.initCursor();
+    // ?gsap=1: hand section arrivals to gsap-motion.js once GSAP has loaded
+    if (window.__gsapReady) window.__gsapReady.then(() => window.GsapMotion && window.GsapMotion.create(this)).then((m) => { if (m) this.motion = m; });
   }
 
   bootContent() {
@@ -1141,8 +1150,8 @@ class Component extends DCLogic {
     const go = () => {
       this._preDone = true; this._preTarget = 1; this._preProg = 1;
       if (this._preRAF) cancelAnimationFrame(this._preRAF);
-      if (this.preS1) this.preS1.textContent = 'Saad';
-      if (this.preS2) this.preS2.textContent = 'Hashmani';
+      if (this.preS1) this.preS1.textContent = 'SAAD';
+      if (this.preS2) this.preS2.textContent = 'HASHMANI';
       // waveform morphs into the scroll arrow, ring text becomes the hero label
       if (this.preWave) this.preWave.style.opacity = '0';
       if (this.preArrow) this.preArrow.style.opacity = '1';
@@ -1605,6 +1614,7 @@ class Component extends DCLogic {
     this.pbUp = () => { const inst = this.activeInst; if (inst) { inst.drag = false; inst.cluster.style.cursor = 'grab'; } this.activeInst = null; };
     window.addEventListener('pointermove', this.pbMove, { passive: true });
     window.addEventListener('pointerup', this.pbUp, { passive: true });
+    window.addEventListener('pointercancel', this.pbUp, { passive: true });
   }
 
   makePlaybook(sec, sectionIndex) {
@@ -1657,7 +1667,11 @@ class Component extends DCLogic {
     this.layoutPb(inst);
     inst.cx = inst.tx; inst.cy = inst.ty;
     inst.cluster.addEventListener('pointerdown', (e) => {
-      inst.drag = true; inst.moved = false; inst.rotTarget = null; inst.vel = 0;
+      inst.moved = false;
+      // phones: only touches inside the wheel turn it (full circle when centred, the half circle at
+      // the bottom when docked); everywhere else the screen taps and scrolls normally
+      if (this.isMobile() && Math.hypot(e.clientX - inst.cx, e.clientY - inst.cy) > inst.R * (inst.mode === 'left' ? 0.8 : 0.95)) return;
+      inst.drag = true; inst.rotTarget = null; inst.vel = 0;
       inst.lastA = Math.atan2(e.clientY - inst.cy, e.clientX - inst.cx);
       inst._lastX = e.clientX;
       inst.cluster.style.cursor = 'grabbing'; this.activeInst = inst;
@@ -1932,6 +1946,7 @@ class Component extends DCLogic {
       if (l) { l.style.width = on ? '46px' : '20px'; l.style.background = on ? 'var(--glow,#f6f5f2)' : 'var(--line-strong,rgba(255,255,255,.14))'; }
     });
     if (this.vCur) this.vCur.textContent = String(i + 1).padStart(2, '0');
+    if (this.motion) this.motion.venture();
   }
 
   updateVentures(y) {
@@ -2761,6 +2776,8 @@ class Component extends DCLogic {
     let touchY = null;
     this._touchStart = (e) => { touchY = e.touches[0].clientY; };
     this._touchMove = (e) => {
+      // a finger turning the playbook wheel never also changes section
+      if (this.activeInst && this.activeInst.drag) { e.preventDefault(); touchY = null; return; }
       if (touchY === null || this._transPlaying || this.autoReturn || this._homeGliding) return;
       const dy = touchY - e.changedTouches[0].clientY;
       if (Math.abs(dy) > 40) {
@@ -3013,8 +3030,9 @@ class Component extends DCLogic {
 
 
   // ---- Background: one combined video, s0 t0 s1 t1 … s6 t6 (s = section loop, t = transition).
-  // At rest the section's loop plays forward then back; a section change plays its transition
-  // forward (down) or backward (up); t6 closes the door for the return to the hero.
+  // At rest the section's loop plays and jumps back to its start; a step down plays its transition
+  // forward; a step up cuts straight to the previous section's loop. t6 closes the door for the
+  // return to the hero. Nothing ever plays backwards.
   // ?quality=480|720|1080 picks the file (default 720, 480 on phones).
   initBg() {
     const v = this.stageVideo = this.root.querySelector('[data-bg]');
@@ -3022,7 +3040,7 @@ class Component extends DCLogic {
     const L = [4.04, 5.04, 4.04, 5.04, 4.04, 5.04, 5, 5.04, 5, 5.04, 4.04, 5.04, 4.04, 5.04];
     this.LOOP = []; this.TRANS = [];
     for (let i = 0, t = 0; i < 7; i++) { this.LOOP.push([t, t += L[2 * i]]); this.TRANS.push([t, t += L[2 * i + 1]]); }
-    this.bg = { loop: null, dir: 1, step: null, arrive: null, f: '' };
+    this.bg = { loop: null, step: null, f: '' };
     if (!v) return;
     v.muted = true; v.defaultMuted = true; v.playsInline = true;
     let q = null;
@@ -3045,30 +3063,22 @@ class Component extends DCLogic {
     if (v.readyState >= 1 && !v.seeking && Math.abs(v.currentTime - t) > 0.02) { try { v.currentTime = t; } catch (e) {} }
   }
 
-  // loop section i; dir -1 starts from its end (arriving from below, the reverse transition ends there)
-  startLoop(i, dir) {
-    const v = this.stageVideo, [a, b] = this.LOOP[i];
-    this.bg.loop = i; this.bg.dir = dir; this.bg.rt = performance.now(); this.bg.rt0 = b - 0.07;
+  // loop section i from its start (inset a frame so the neighbouring clips never show)
+  startLoop(i) {
+    const v = this.stageVideo;
+    this.bg.loop = i;
     this.bgFilter(i, 0);
-    if (v.readyState >= 1) { try { v.currentTime = dir > 0 ? a : b - 0.07; } catch (e) {} }
+    if (v.readyState >= 1) { try { v.currentTime = this.LOOP[i][0] + 0.04; } catch (e) {} }
+    if (!this.reduced && v.paused) { v.playbackRate = 1; const pr = v.play(); if (pr && pr.catch) pr.catch(() => {}); }
   }
 
-  tickBg(now) {
+  tickBg() {
     const v = this.stageVideo, bg = this.bg;
-    if (!v || bg.step || bg.loop == null || this.reduced || v.readyState < 2) return;
-    const [a0, b0] = this.LOOP[bg.loop], a = a0 + 0.04, b = b0 - 0.07;   // stay off the neighbouring clips' frames
+    if (!v || bg.loop == null || this.reduced || v.readyState < 1) return;
+    const [a0, b0] = this.LOOP[bg.loop], a = a0 + 0.04, b = b0 - 0.07;
     const t = v.currentTime;
-    if (t < a - 0.15 || t > b + 0.15) { if (!v.paused) v.pause(); this.seekBg(a); bg.dir = 1; return; }
-    if (bg.dir > 0) {
-      if (t >= b) { v.pause(); bg.dir = -1; bg.rt = now; bg.rt0 = t; return; }
-      if (v.paused) { v.playbackRate = 1; const pr = v.play(); if (pr && pr.catch) pr.catch(() => {}); }
-    } else {
-      // no native reverse playback: step back by seeking, at real-time speed
-      const target = bg.rt0 - (now - bg.rt) / 1000;
-      if (target <= a) { bg.dir = 1; this.seekBg(a); return; }
-      if (!v.paused) v.pause();
-      this.seekBg(target);
-    }
+    if (t < a - 0.15 || t >= b) { this.seekBg(a); return; }   // loop end (or drifted out): restart instantly
+    if (v.paused && !v.seeking) { v.playbackRate = 1; const pr = v.play(); if (pr && pr.catch) pr.catch(() => {}); }
   }
 
   // scroll position -> background, whenever no section step owns the video
@@ -3077,7 +3087,7 @@ class Component extends DCLogic {
     if (!v || bg.step) return;
     if (s.type === 'rest') {
       if (this.reduced) { this.bgFilter(s.i, 0); this.seekBg(this.LOOP[s.i][0] + 0.04); return; }
-      if (bg.loop !== s.i) this.startLoop(s.i, bg.arrive && bg.arrive.i === s.i ? bg.arrive.dir : 1);
+      if (bg.loop !== s.i) this.startLoop(s.i);
       return;
     }
     // inside a transition band (e.g. a Home/End glide): scrub the transition
@@ -3088,24 +3098,23 @@ class Component extends DCLogic {
     this.seekBg(a + (b - a) * p);
   }
 
-  // a section change: transition k plays start->end (or end->start when reverse) over `dur`
-  // seconds while the page glides, then the arriving section's loop takes over on the same frame
+  // a section change while the page glides for `dur` seconds. Down: transition k plays forward and
+  // hands over to loop k+1 on the same frame. Up (reverse): cut straight to loop k.
   runStep(k, dur, reverse, done) {
     const v = this.stageVideo, bg = this.bg, id = (bg.stepId || 0) + 1, [a, b] = this.TRANS[k];
     bg.stepId = id; bg.step = true; bg.loop = null;
-    bg.arrive = { i: reverse ? k : (k + 1) % 7, dir: reverse ? -1 : 1 };
     if (bg.raf) cancelAnimationFrame(bg.raf);
-    const live = v && !this.reduced && v.readyState >= 1, t0 = performance.now();
+    if (v && reverse) this.startLoop(k);
+    const live = v && !reverse && !this.reduced && v.readyState >= 1, t0 = performance.now();
     const finish = () => {
       if (bg.stepId !== id) return;
       if (bg.raf) cancelAnimationFrame(bg.raf);
-      if (v) { if (!v.paused) v.pause(); v.playbackRate = 1; }
+      if (live) { v.pause(); v.playbackRate = 1; }
       bg.step = null;
       if (done) done();
       this.handle(this.readY());
     };
-    if (live && !reverse) {
-      // forward: native playback, smooth at any keyframe spacing
+    if (live) {
       try { v.currentTime = a; } catch (e) {}
       v.playbackRate = Math.max(0.5, Math.min(4, (b - a) / dur));
       const pr = v.play(); if (pr && pr.catch) pr.catch(() => {});
@@ -3113,9 +3122,10 @@ class Component extends DCLogic {
     const tick = (now) => {
       if (bg.stepId !== id) return;
       const p = Math.min(1, (now - t0) / (dur * 1000));
-      if (v) this.bgFilter(k, reverse ? 1 - p : p);
-      if (live && reverse) this.seekBg(b - (b - a) * p);
-      if (live && !reverse && v.currentTime >= b - 0.07) v.pause();   // hold the last frame, never bleed into the next loop
+      if (live) {
+        this.bgFilter(k, p);
+        if (v.currentTime >= b - 0.07) v.pause();   // hold the last frame, never bleed into the next loop
+      }
       if (p < 1) bg.raf = requestAnimationFrame(tick); else finish();
     };
     bg.raf = requestAnimationFrame(tick);

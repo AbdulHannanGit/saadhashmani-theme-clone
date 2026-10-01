@@ -1,0 +1,17 @@
+:root{
+/* Slow, weighted, no bounce. Things arrive by fading up; gold brightens rather than moves. */
+--ease-brand:cubic-bezier(0.22,0.61,0.36,1); /* @kind other */
+--ease-out-soft:cubic-bezier(0.16,1,0.3,1); /* @kind other */
+--ease-in-out:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+
+--dur-instant:120ms; /* @kind other */
+--dur-hover:260ms; /* @kind other */
+--dur-ui:420ms; /* @kind other */
+--dur-reveal:760ms; /* @kind other */
+--dur-cinematic:1200ms; /* @kind other */
+
+--stagger:90ms; /* @kind other */
+--reveal-rise:18px; /* @kind spacing */
+
+--transition-hover:color var(--dur-hover) var(--ease-brand),background-color var(--dur-hover) var(--ease-brand),border-color var(--dur-hover) var(--ease-brand),box-shadow var(--dur-hover) var(--ease-brand),opacity var(--dur-hover) var(--ease-brand); /* @kind other */
+}

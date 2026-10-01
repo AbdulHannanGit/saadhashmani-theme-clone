@@ -1,0 +1,35 @@
+:root{
+--font-display:"Playfair Display",'Times New Roman',serif;
+--font-sans:"Jost",'Helvetica Neue',Arial,sans-serif;
+
+/* Display serif — always set tight, always in caps except pull quotes */
+--display-hero:clamp(52px,7.6vw,112px); /* @kind font */
+--display-1:clamp(42px,5.6vw,82px); /* @kind font */
+--display-2:clamp(34px,4.2vw,60px); /* @kind font */
+--display-3:clamp(26px,3vw,40px); /* @kind font */
+--lh-display:0.98; /* @kind font */
+--ls-display:0.005em; /* @kind font */
+--weight-display:400; /* @kind font */
+
+/* Quote — the only italic in the system */
+--quote-lg:28px;--quote-md:22px;--lh-quote:1.35; /* @kind font */
+
+/* Sans — labels, nav, buttons, body */
+--eyebrow:13px;--ls-eyebrow:0.42em; /* @kind font */
+--label:12px;--ls-label:0.16em; /* @kind font */
+--nav:13px;--ls-nav:0.14em; /* @kind font */
+--action:13px;--ls-action:0.14em; /* @kind font */
+--lede:19px;--ls-lede:0.06em; /* @kind font */
+--body-lg:17px;--body:15px;--body-sm:13.5px; /* @kind font */
+--lh-body:1.62; /* @kind font */--lh-tight:1.4; /* @kind font */
+--numeral-xl:46px;--numeral-lg:34px;--ls-numeral:0.01em; /* @kind font */
+
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600; /* @kind font */
+
+/* Ready-made text roles */
+--type-eyebrow:var(--weight-medium) var(--eyebrow)/1.2 var(--font-sans); /* @kind font */
+--type-nav:var(--weight-regular) var(--nav)/1 var(--font-sans); /* @kind font */
+--type-action:var(--weight-medium) var(--action)/1 var(--font-sans); /* @kind font */
+--type-body:var(--weight-regular) var(--body)/var(--lh-body) var(--font-sans); /* @kind font */
+--type-lede:var(--weight-regular) var(--lede)/1.45 var(--font-sans); /* @kind font */
+}
